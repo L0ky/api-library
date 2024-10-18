@@ -1,8 +1,3 @@
-## Prérequis
-
-Docker installé et fonctionnel (car Laravel Sail utilise Docker).
-Composer installé pour gérer les dépendances PHP.
-Une copie du dépôt du projet (via git clone ou autre méthode).
 ## Installation
 
 ### 1. Cloner le dépôt
