@@ -57,6 +57,13 @@ class BooksController extends Controller
 
         $book = Book::find($id);
         $book->is_available = false;
+
+        if ($book->borrower_id) {
+            return response()->json([
+                'message' => 'Book is already borrowed',
+            ], 400);
+        }
+
         $book->borrower_id = $user->id;
         $book->save();
         return $book;
