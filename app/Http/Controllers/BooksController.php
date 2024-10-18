@@ -27,6 +27,15 @@ class BooksController extends Controller
         return $book;
     }
 
+    public function delete(int $id)
+    {
+        $book = Book::find($id);
+        $book->delete();
+        return response()->json([
+            'message' => 'Book deleted',
+        ]);
+    }
+
     public function getAvailableBooks()
     {
         return Book::where('is_available', true)->get();
