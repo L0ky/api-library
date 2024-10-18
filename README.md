@@ -4,7 +4,6 @@ Docker installé et fonctionnel (car Laravel Sail utilise Docker).
 Composer installé pour gérer les dépendances PHP.
 Une copie du dépôt du projet (via git clone ou autre méthode).
 ## Installation
-Suivez ces étapes pour installer et configurer le projet sur votre machine locale :
 
 ### 1. Cloner le dépôt
 Si vous n'avez pas encore cloné le projet, faites-le en utilisant la commande suivante :
