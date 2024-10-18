@@ -36,3 +36,9 @@ php artisan key:generate
 http://localhost
 ```
 
+### 8. Collection insomnia
+Le fichier se trouve à la racine du projet
+```
+Insomnia_2024-10-18.json
+```
+
