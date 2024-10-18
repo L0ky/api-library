@@ -27,7 +27,7 @@ Route::group(['prefix' => 'books'], function () {
     Route::post('/{id}/borrow', [BooksController::class, 'borrowBook']);
     Route::post('/{id}/return', [BooksController::class, 'returnBook']);
     Route::delete('/{id}', [BooksController::class, 'delete']);
-})->middleware('auth:sanctum');
+});
 
 Route::group(['prefix' => 'auth'], function () {
     Route::post('/register', [AuthController::class, 'register']);
